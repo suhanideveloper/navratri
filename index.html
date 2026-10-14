@@ -1,59 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navratri 2026 - 9 Devi Kahaniyan</title>
+<title>Jai Mata Di - 9 Durgas ki Kahaniyan</title>
 <style>
-body{font-family:sans-serif;background:#fff8f0;margin:0}
-header{background:linear-gradient(135deg,#8b0000,#ff6f00);color:white;text-align:center;padding:35px 20px}
-.container{max-width:900px;margin:auto;padding:15px}
-.card{background:white;border-radius:18px;margin:18px 0;box-shadow:0 5px 20px #0001;border-left:6px solid #ff6f00}
-.head{padding:18px;display:flex;gap:12px;align-items:center;cursor:pointer}
-.num{background:#ff6f00;color:white;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold}
-.content{padding:0 18px 18px 18px;display:none}
-.content.active{display:block}
-.swaroop{background:#fff3e6;padding:10px;border-radius:10px;margin:10px 0;font-size:14px}
-.mantra{background:linear-gradient(90deg,#8b0000,#ff6f00);color:white;padding:10px;border-radius:8px;text-align:center;margin-top:10px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#fff8f0}
+.header{background:linear-gradient(135deg,#d32f2f,#ff6f00);color:white;text-align:center;padding:40px 20px 30px;border-radius:0 0 30px 30px}
+.header h1{font-size:32px}
+.header p{margin-top:10px;opacity:.9;font-size:18px}
+.container{max-width:600px;margin:-20px auto 0;padding:20px}
+.card{background:white;border-radius:20px;margin:15px 0;box-shadow:0 4px 15px rgba(0,0,0,.08);border-left:6px solid #ff6f00;overflow:hidden;cursor:pointer;transition:.3s}
+.card-header{display:flex;align-items:center;padding:18px 20px;gap:15px}
+.num{background:#ff6f00;color:white;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:20px;flex-shrink:0}
+.card-header h2{font-size:18px}
+.card-header span{font-size:14px;color:#666}
+.card-body{display:none;padding:0 20px 20px 20px}
+.card.open .card-body{display:block}
+.card-body p{line-height:1.6;color:#333;font-size:15px;margin:10px 0}
+.badge{background:#fff3e0;padding:8px 12px;border-radius:10px;display:inline-block;margin:5px 0;font-size:14px}
+.mantra{background:linear-gradient(90deg,#b71c1c,#ff6f00);color:white;text-align:center;padding:12px;border-radius:12px;margin-top:12px;font-weight:bold}
+.footer{text-align:center;padding:30px;color:#999}
+.day10{border-left-color:#6a1b9a}
+.day10 .num{background:#6a1b9a}
 </style>
 </head>
 <body>
-<header><h1>🙏 Jai Mata Di 🙏</h1><h2>Navratri</h2><p>9 Durgas ki Kahaniyan</p></header>
+<div class="header">
+<h1>🙏 Jai Mata Di 🙏</h1>
+<p>Navratri</p>
+<p style="margin-top:5px">9 Durgas ki Kahaniyan</p>
+</div>
 <div class="container">
 
-<div class="card"><div class="head" onclick="openDay(1)"><div class="num">1</div><div><b>Maa Shailputri</b><br><small>Day 1 - orange🧡</small></div></div>
-<div class="content active" id="d1"><p><b>Pichhle janm me Sati thi</b>, Daksha ki beti. Daksha ne Shiv ka apmaan kiya to Sati yagya ki aag me bhasm ho gayi. Dusre janm me Himalaya Raj ki beti bani - Shailputri! Tapasya karke fir Shiv ko paya.</p><div class="swaroop">🔱 Trishul, Kamal, Nandi par sawar</div><div class="mantra">ॐ देवी शैलपुत्र्यै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(2)"><div class="num">2</div><div><b>Maa Brahmacharini</b><br><small>Day 2 - white🤍</small></div></div>
-<div class="content" id="d2"><p>Shiv ko pane ke liye 1000 saal phool patte khaye, fir bina khaye tap kiya. Is kathor Brahmacharya se naam pada Brahmacharini.</p><div class="mantra">ॐ देवी ब्रह्मचारिण्यै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(3)"><div class="num">3</div><div><b>Maa Chandraghanta</b><br><small>Day 3 -red❤</small></div></div>
-<div class="content" id="d3"><p>Shiv baraat me bhoot-pret laye to Parvati ki maa behosh ho gayi. Tab Parvati ne chandraghanta roop liya - maathe par ghante jaisa chand. Ghante ki awaz se asur darte hain.</p><div class="mantra">ॐ देवी चन्द्रघण्टायै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(4)"><div class="num">4</div><div><b>Maa Kushmanda</b><br><small>Day 4 - blue💙 </small></div></div>
-<div class="content" id="d4"><p>Jab kuch nahi tha, andhera tha, tab Maa ne apni muskan se Brahmand banaya. Isliye Kushmanda.</p><div class="mantra">ॐ देवी कूष्माण्डायै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(5)"><div class="num">5</div><div><b>Maa Skandamata</b><br><small>Day 5 - yellow💛 </small></div></div>
-<div class="content" id="d5"><p>Skanda = Kartikeya. Kartikeya ki maa hone se Skandamata. Ye mamta ki devi hain, santan sukh deti hain.</p><div class="mantra">ॐ देवी स्कन्दमातायै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(6)"><div class="num">6</div><div><b>Maa Katyayani</b><br><small>Day 6 -green💚</small></div></div>
-<div class="content" id="d6"><p>Rishi Katyayan ki beti bani. Devtao ke tej se prakat hui aur Mahishasur ka vadh kiya.</p><div class="mantra">ॐ देवी कात्यायन्यै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(7)"><div class="num">7</div><div><b>Maa Kalaratri</b><br><small>Day 7 - black🖤</small></div></div>
-<div class="content" id="d7"><p>Shumbh-Nishumbh, Raktabeej ko maarne ke liye sabse bhayanak roop liya. Kaala rang, bikhre baal. Par bhakto ko shubh fal deti hain - Shubhankari.</p><div class="mantra">ॐ देवी कालरात्र्यै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(8)"><div class="num">8</div><div><b>Maa Mahagauri</b><br><small>Day 8 -🩶</small></div></div>
-<div class="content" id="d8"><p>Shiv ne kaali kaha to gora hone ke liye tap kiya. Ganga jal me snaan karte hi rang bijli jaisa gora ho gaya - Mahagauri.</p><div class="mantra">ॐ देवी महागौर्यै नमः</div></div></div>
-
-<div class="card"><div class="head" onclick="openDay(9)"><div class="num">9</div><div><b>Maa Siddhidatri</b><br><small>Day 9 - pink💖</small></div></div>
-<div class="content" id="d9"><p>Sab siddhiyon ko dene wali. Shiv ne bhi siddhiyan inhi se li, tab Ardhanarishwar bane.</p><div class="mantra">ॐ देवी सिद्धिदात्र्यै नमः</div></div></div>
-<p align="center"> made by suhanideveloper❤</p>
+<div class="card open">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">1</div><div><h2>Maa Shailputri</h2><span>Day 1 - grey 🤍</span></div>
 </div>
-<script>
-function openDay(n){
- document.querySelectorAll('.content').forEach(c=>c.classList.remove('active'));
- document.getElementById('d'+n).classList.add('active');
-}
-</script>
+<div class="card-body">
+<p><b>Pichhle janm me Sati thi,</b> Daksha ki beti. Daksha ne Shiv ka apmaan kiya to Sati yagya ki aag me bhasm ho gayi. Dusre janm me Himalaya Raj ki beti bani - Shailputri! Tapasya karke fir Shiv ko paya.</p>
+<div class="badge">🔱 Trishul, Kamal, Nandi par sawar</div>
+<div class="mantra">ॐ देवी शैलपुत्र्यै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">2</div><div><h2>Maa Brahmacharini</h2><span>Day 2 - orange 🧡</span></div>
+</div>
+<div class="card-body">
+<p>Shiv ko pati ke roop me pane ke liye 1000 saal tak phool-patte khaye, fir bina khaye ghor tapasya ki. Is tapasya se naam Brahmacharini pada.</p>
+<div class="badge">📿 Japmala, Kamandal</div>
+<div class="mantra">ॐ देवी ब्रह्मचारिण्यै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">3</div><div><h2>Maa Chandraghanta</h2><span>Day 3 - white 🤍</span></div>
+</div>
+<div class="card-body">
+<p>Shadi ke samay Shiv ka bhayanak roop dekh Parvati ne ye roop liya. Maathe par ghante ke aakar ka chand hai, jiski awaaz se rakshas bhaagte hain!</p>
+<div class="badge">🔔 10 haath, Sher par sawar</div>
+<div class="mantra">ॐ देवी चन्द्रघण्टायै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">4</div><div><h2>Maa Kushmanda</h2><span>Day 4 - red ❤️</span></div>
+</div>
+<div class="card-body">
+<p>Jab andhera tha, Maa ne apni muskaan se Brahmand banaya! Ku=chhota, Ushma=garam, Anda=brahmand.</p>
+<div class="badge">☀️ 8 haath, Suraj ke andar rehti hain</div>
+<div class="mantra">ॐ देवी कूष्माण्डायै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">5</div><div><h2>Maa Skandamata</h2><span>Day 5 - blue 💙</span></div>
+</div>
+<div class="card-body">
+<p>Bhagwan Kartikeya (Skanda) ki Maa! Maa-bete ke pyaar ki prateek hain.</p>
+<div class="badge">👩‍👦 God me Skanda, Kamal par</div>
+<div class="mantra">ॐ देवी स्कन्दमातायै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">6</div><div><h2>Maa Katyayani</h2><span>Day 6 - yellow 💛</span></div>
+</div>
+<div class="card-body">
+<p>Rishi Katyayan ki beti bankar Mahishasur ka vadh kiya. Yoddha roop!</p>
+<div class="badge">⚔️ 4 haath, Talwar, Sher par sawar</div>
+<div class="mantra">ॐ देवी कात्यायन्यै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">7</div><div><h2>Maa Kalaratri</h2><span>Day 7 - green 💚</span></div>
+</div>
+<div class="card-body">
+<p>Sabse bhayanak roop! Kaala rang, bikhre baal. Raktabeej ko maarne ke liye ye roop liya. Darne ki baat nahi, ye shubh karne wali hain.</p>
+<div class="badge">🖤 Gadha par sawar</div>
+<div class="mantra">ॐ देवी कालरात्र्यै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">8</div><div><h2>Maa Mahagauri</h2><span>Day 8 - peacock 🦚</span></div>
+</div>
+<div class="card-body">
+<p>Tapasya se rang kaala ho gaya tha. Shiv ji ne Ganga jal se nahalaya to chandni jaisi gori ho gayi! Isliye Mahagauri.</p>
+<div class="badge">🤍 Bail par sawar, Safed vastra</div>
+<div class="mantra">ॐ देवी महागौर्यै नमः</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">9</div><div><h2>Maa Siddhidatri</h2><span>Day 9 - pink 💖</span></div>
+</div>
+<div class="card-body">
+<p>Sab siddhiyan dene wali! Shiv ji ne inki puja karke 8 siddhiyan payi aur Ardhanarishwar bane.</p>
+<div class="badge">🌸 Kamal par, 4 haath</div>
+<div class="mantra">ॐ देवी सिद्धिदात्र्यै नमः</div>
+</div>
+</div>
+
+<div class="card day10">
+<div class="card-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num">10</div><div><h2>Vijayadashami</h2><span>Day 10 - purple 💜</span></div>
+</div>
+<div class="card-body">
+<p><b>Jeet ka din!</b> Ram ji ne Ravan ko maara aur Maa ne Mahishasur ko. Is din naya kaam shuru karna shubh hota hai.</p>
+<div class="badge">🏹 Ravan dahan, Shami patte</div>
+<div class="mantra">✨ Burai par Acchai ki Jeet ✨</div>
+</div>
+</div>
+
+</div>
+<div class="footer">made by suhanideveloper ❤️<br>Jai Mata Di 🙏</div>
 </body>
 </html>
